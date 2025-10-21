@@ -16,6 +16,7 @@ return {
         "lua-language-server",
         "python-lsp-server",
         "typescript-language-server",
+        "clangd",
 
         -- install formatters
         "stylua",
