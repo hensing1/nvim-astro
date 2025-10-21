@@ -63,6 +63,10 @@ return {
         ["<Tab>"] = { function() require("astrocore.buffer").nav(vim.v.count1) end, desc = "Next buffer" },
         ["<S-Tab>"] = { function() require("astrocore.buffer").nav(-vim.v.count1) end, desc = "Previous buffer" },
 
+        -- move buffer tabs around
+        ["<A-h>"] = { function() require("astrocore.buffer").move(-1) end, desc = "Move buffer to the left" },
+        ["<A-l>"] = { function() require("astrocore.buffer").move(1) end, desc = "Move buffer to the right" },
+
         -- mappings seen under group name "Buffer"
         ["<Leader>bd"] = {
           function()
